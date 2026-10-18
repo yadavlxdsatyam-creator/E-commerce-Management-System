@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ShopEase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html" data-login-link>Login</a>
+    </div>
+</nav>
+
+<section class="checkout-section">
+    <h1>Checkout</h1>
+
+    <div class="checkout-box">
+        <h2>Customer Information</h2>
+        <div class="form-group"><label>Full Name</label><input id="customerName" readonly></div>
+        <div class="form-group"><label>Email</label><input id="customerEmail" readonly></div>
+        <div class="form-group"><label>Phone</label><input id="customerPhone" readonly></div>
+    </div>
+
+    <div class="checkout-box">
+        <h2>Shipping Address</h2>
+        <div class="form-group"><label for="address">Address</label><textarea id="address"></textarea></div>
+        <div class="form-row">
+            <div class="form-group"><label for="city">City</label><input id="city"></div>
+            <div class="form-group"><label for="state">State</label><input id="state"></div>
+            <div class="form-group"><label for="pincode">Pincode</label><input id="pincode" maxlength="6"></div>
+        </div>
+    </div>
+
+    <div class="checkout-box">
+        <h2>Payment Method</h2>
+        <div class="payment-options">
+            <label><input type="radio" name="paymentMethod" value="UPI"> UPI</label>
+            <label><input type="radio" name="paymentMethod" value="CARD"> Card</label>
+            <label><input type="radio" name="paymentMethod" value="NET_BANKING"> Net Banking</label>
+            <label><input type="radio" name="paymentMethod" value="COD"> Cash on Delivery</label>
+        </div>
+    </div>
+
+    <div class="checkout-box">
+        <h2>Order Summary</h2>
+        <div id="checkoutSummary"><p>Loading...</p></div>
+    </div>
+
+    <div class="checkout-action">
+        <button id="placeOrderButton">Place Order</button>
+    </div>
+</section>
+
+<footer><p>© 2026 ShopEase. All rights reserved.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

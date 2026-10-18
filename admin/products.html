@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ShopEase Admin - Products</title><link rel="stylesheet" href="../css/admin.css"></head>
+<body><div class="admin-container">
+<aside class="admin-sidebar"><div class="sidebar-brand"><h2>ShopEase Admin</h2></div>
+<nav class="sidebar-menu"><ul><li><a href="dashboard.html" class="">Dashboard</a></li><li><a href="products.html" class="active">Products</a></li><li><a href="categories.html" class="">Categories</a></li><li><a href="customers.html" class="">Customers</a></li><li><a href="orders.html" class="">Orders</a></li><li><a href="payments.html" class="">Payments</a></li>
+<li><a href="../index.html" class="exit-link">Exit to Store</a></li></ul></nav></aside>
+<main class="admin-main"><header class="admin-header"><h1>Product Management</h1></header>
+<header class="admin-header"><h1>Product Management</h1><button class="btn-submit" id="openAddModalBtn">Add New Product</button></header>
+<section class="table-container"><table class="admin-table"><thead><tr>
+<th>ID</th><th>Image</th><th>Product Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Actions</th>
+</tr></thead><tbody id="adminProductTableBody"><tr><td colspan="7">Loading...</td></tr></tbody></table></section>
+<div class="modal-overlay" id="productModal"><div class="modal-content">
+<header class="modal-header-title"><h2>Add New Product</h2><button class="btn-close-modal" id="closeModalBtn">&times;</button></header>
+<form id="addProductForm">
+<div class="form-group"><label for="prodName">Product Name *</label><input id="prodName" required></div>
+<div class="form-row"><div class="form-group"><label for="prodCategory">Category *</label><select id="prodCategory" required></select></div>
+<div class="form-group"><label for="prodPrice">Price *</label><input type="number" id="prodPrice" min="1" required></div></div>
+<div class="form-group"><label for="prodStock">Stock Quantity *</label><input type="number" id="prodStock" min="0" required></div>
+<div class="form-group"><label for="prodImageUrl">Image URL</label><input type="url" id="prodImageUrl"></div>
+<div class="form-group"><label for="prodDesc">Description</label><textarea id="prodDesc" rows="3"></textarea></div>
+<div class="modal-footer-actions"><button type="button" class="btn-cancel" id="cancelModalBtn">Cancel</button><button type="submit" class="btn-submit">Save Product</button></div>
+</form></div></div>
+</main></div>
+<script src="../js/admin.js"></script></body></html>

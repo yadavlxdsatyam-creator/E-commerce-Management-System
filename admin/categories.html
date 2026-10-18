@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ShopEase Admin - Categories</title><link rel="stylesheet" href="../css/admin.css"></head>
+<body><div class="admin-container">
+<aside class="admin-sidebar"><div class="sidebar-brand"><h2>ShopEase Admin</h2></div>
+<nav class="sidebar-menu"><ul><li><a href="dashboard.html" class="">Dashboard</a></li><li><a href="products.html" class="">Products</a></li><li><a href="categories.html" class="active">Categories</a></li><li><a href="customers.html" class="">Customers</a></li><li><a href="orders.html" class="">Orders</a></li><li><a href="payments.html" class="">Payments</a></li>
+<li><a href="../index.html" class="exit-link">Exit to Store</a></li></ul></nav></aside>
+<main class="admin-main"><header class="admin-header"><h1>Category Management</h1></header>
+<header class="admin-header"><h1>Category Management</h1><button class="btn-submit" id="openCategoryModalBtn">Add Category</button></header>
+<section class="table-container"><table class="admin-table"><thead><tr><th>ID</th><th>Name</th><th>Description</th><th>Actions</th></tr></thead>
+<tbody id="adminCategoryTableBody"><tr><td colspan="4">Loading...</td></tr></tbody></table></section>
+<div class="modal-overlay" id="categoryModal"><div class="modal-content">
+<header class="modal-header-title"><h2>Add Category</h2><button class="btn-close-modal" id="closeCategoryModalBtn">&times;</button></header>
+<form id="categoryForm"><div class="form-group"><label for="categoryName">Category Name *</label><input id="categoryName" required></div>
+<div class="form-group"><label for="categoryDescription">Description</label><textarea id="categoryDescription" rows="3"></textarea></div>
+<div class="modal-footer-actions"><button type="button" class="btn-cancel" id="cancelCategoryModalBtn">Cancel</button><button class="btn-submit" type="submit">Save Category</button></div>
+</form></div></div>
+</main></div>
+<script src="../js/admin.js"></script></body></html>
